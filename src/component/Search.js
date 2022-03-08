@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
+import { fetchData } from "../redux/action";
 import { useState } from "react/cjs/react.development";
 
 const Input = styled.input`
@@ -29,9 +30,7 @@ function Search({ className }) {
         id="text"
         onChange={(e) => setText(e.target.value)}
       />
-      <Button onClick={() => dispatch({ type: "SEARCH", payload: text })}>
-        Search
-      </Button>
+      <Button onClick={() => dispatch(fetchData(text))}>Search</Button>
     </div>
   );
 }

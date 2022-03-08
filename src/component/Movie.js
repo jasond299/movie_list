@@ -18,6 +18,7 @@ const Title = styled.div`
   background-color: red;
   color: white;
   font-weight: bold;
+  font-size: 14px;
   vertical-align: middle;
   line-height: 50px;
 `;

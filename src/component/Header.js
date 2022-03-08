@@ -13,6 +13,7 @@ const Container = styled.div`
 const Title = styled.div`
   margin-left: 60px;
   font-size: 24px;
+  font-weight: bold;
 `;
 
 const SearchButton = styled(Search)`
